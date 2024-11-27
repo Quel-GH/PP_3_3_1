@@ -1,7 +1,7 @@
 package com.example.pp_3_3_1.controller;
 
 import com.example.pp_3_3_1.model.UserEntity;
-import com.example.pp_3_3_1.service.UserService;
+import com.example.pp_3_3_1.service.UserServiceImp;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class UserController {
 
-    UserService DB;
+    UserServiceImp DB;
 
-    public UserController(UserService DB) {
+    public UserController(UserServiceImp DB) {
         this.DB = DB;
     }
 
